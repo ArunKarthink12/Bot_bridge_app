@@ -1,16 +1,13 @@
-
-
 class ServerURL {
-
   // static String token = "http://122.182.18.201/CaretrakME/MApp/";
-    static String token = "http://255.255.255.0/CaretrakME/MApp/";
-
+  static String token = "http://255.255.255.0/CaretrakME/MApp/";
 
   //  static String baseurl = "http://uat.yungtrepreneur.com/HCAPI/api/ExternalAPI/";
-   static String baseurl = "http://lims.yungtrepreneur.com/HCAPI/api/ExternalAPI/";
+  static String baseurl =
+      "http://lims.yungtrepreneur.com/HCAPI/api/ExternalAPI/";
 
-
-   static String serviceDataURL = "http://lims.yungtrepreneur.com/HCAPI/api/ExternalAPI/GetServiceDetails?VenueNo=2&VenueBranchNo=2";
+  static String serviceDataURL =
+      "http://lims.yungtrepreneur.com/HCAPI/api/ExternalAPI/GetServiceDetails?VenueNo=2&VenueBranchNo=2";
 
   // static String serviceDataURL = "http://uat.yungtrepreneur.com/HCAPI/api/ExternalAPI/GetServiceDetails?VenueNo=2&VenueBranchNo=2";
   getUrl(RequestType RequestTypes) {
@@ -55,18 +52,17 @@ class ServerURL {
         return baseurl + RequestType.UpdateRiderStatus.name;
       case RequestType.SignOut:
         return baseurl + RequestType.SignOut.name;
+      case RequestType.GetLiveLocation:
+        return baseurl + RequestType.GetLiveLocation.name;
       case RequestType.GetArchivePatientDetails:
         return baseurl + RequestType.GetArchivePatientDetails.name;
       case RequestType.serviceData:
         return serviceDataURL;
     }
   }
-
 }
 
-
 enum RequestType {
-
   token,
 
   Login,
@@ -109,6 +105,6 @@ enum RequestType {
 
   serviceData,
 
-  UploadPrescription
-
+  UploadPrescription,
+  GetLiveLocation
 }
