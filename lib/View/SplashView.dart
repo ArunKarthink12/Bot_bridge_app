@@ -84,12 +84,16 @@ class _SplashViewState extends State<SplashView> {
                     shape: BoxShape.circle, color: CustomTheme.circle_green),
               )),
           Align(
-            alignment: Alignment.center,
-            child: Image.asset(
-              'assets/images/bot_logo.jpg',
-              height: height * 0.22,
-            ),
-          ),
+              alignment: Alignment.center,
+              child: Container(
+                color: Colors.transparent,
+                height: height * 0.22,
+              )
+              //  Image.asset(
+              //   'assets/images/bot_logo.jpg',
+              //   height: height * 0.22,
+              // ),
+              ),
         ],
       ),
     );

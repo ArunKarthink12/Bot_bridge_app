@@ -7,9 +7,9 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:label="Rider"
+        android:label="SampleProject"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/splashscreen">
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyD1QIjgSTLvwjTX2NBDm6pGtRRaEQaXY7c"/>
         <activity
